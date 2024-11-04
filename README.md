@@ -3,7 +3,7 @@
 
 ## System
 
-OS: Windows 11
+OS: Windows 11<br />
 Rust Version: rustc 1.82.0 (f6e511eec 2024-10-15)
 
 ## Libraries
