@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Order for table {table_number}</title>
+  </head>
+  <body>
+    <h1>Table {table_number}</h1>
+    <form action="/api/table/{table_number}/order" method="POST" id="form">
+      <input type="hidden" id="table_number" name="table_number" value="{table_number}">
+      <input type="hidden" id="json" name="json" value="">
+      {order_form}
+      <button class="btn btn-primary" type="submit">Order</button>
+    </form>
+
+    <a href="/client/table?table_number={table_number}">Back</a>
+  </body>
+</html>

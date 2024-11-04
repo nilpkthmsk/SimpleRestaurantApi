@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Table {table_number}</title>
+  </head>
+  <body>
+    <h1>Table {table_number}</h1>
+
+    <div>
+      <h2>{item_type}</h2>
+      {remain_items}
+    </div>
+
+    <div>
+      <a href="/client/table?table_number={table_number}">Show Remaining Item</a>
+    </div>
+    <div>
+      <a href="/client/table?table_number={table_number}&all=true">Show All Item</a>
+    </div>
+    <div>
+      <a href="/client/table/order?table_number={table_number}" target="_blank">Order</a>
+    </div>
+    <div>
+      <a href="/client/table_selection" target="_blank">Back</a>
+    </div>
+
+    <h2>API</h2>
+    <div>
+      <a href="/api/table/{table_number}/order" target="_blank">Show Remaining Item</a>
+    </div>
+    <div>
+      <a href="/api/table/{table_number}/order?all=true" target="_blank">Show All Item</a>
+    </div>
+
+  </body>
+</html>
